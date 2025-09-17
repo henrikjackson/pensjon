@@ -15,20 +15,16 @@ medlemmer.
 .\gradlew.bat bootRun
 ```
 
+Eller last inn Gradle og kjør opp `PensjonApiApplication`
+
 Appen starter på `http://localhost:8080`.
 
 ### Test endepunktet
 
 Eksempler på kall mot endepunkt ligger i `pensjon.http`
 
-```http
-GET http://localhost:8080/api/v1/pensjon/opptjening?fnr=12345678901
-```
 
 ## Tester
-```bash
-# macOS/Linux
-./gradlew test
-# Windows
-.\gradlew.bat test
-```
+Tester ligger i `PensionEstimationServiceTest`
+
+Bygging og tester kjøres med Github Actions for hver commit / PR.
