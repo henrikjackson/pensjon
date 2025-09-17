@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./pension-api   # ← mappen som inneholder gradlew
+        working-directory: ./pension
     steps:
       - uses: actions/checkout@v4
 
