@@ -11,7 +11,7 @@ class PensionEstimationServiceTest {
 
     private val estimator = PensionEstimationService()
 
-    private fun emp(
+    private fun testMember(
         id: String = "e1",
         name: String = "Test",
         birthYear: Int = 1980,
@@ -30,7 +30,7 @@ class PensionEstimationServiceTest {
     @Test
     fun `full-time 10 whole years gives factor 10_30 and correct estimate`() {
         val asOf = LocalDate.of(2025, 1, 1)      // 10 hele år fra 2015-01-01
-        val e = emp(annualSalaryNOK = 600_000, positionPercent = 100, employmentStart = LocalDate.of(2015, 1, 1))
+        val e = testMember(annualSalaryNOK = 600_000, positionPercent = 100, employmentStart = LocalDate.of(2015, 1, 1))
 
         val resp = estimator.estimate(e, asOf)
 
@@ -43,7 +43,7 @@ class PensionEstimationServiceTest {
     @Test
     fun `part-time 60 percent over 5 years yields fractional serviceYears and estimate`() {
         val asOf = LocalDate.of(2025, 1, 1)      // 5 hele år fra 2020-01-01
-        val e = emp(
+        val e = testMember(
             annualSalaryNOK = 560_000,
             positionPercent = 60,
             employmentStart = LocalDate.of(2020, 1, 1)
@@ -60,7 +60,7 @@ class PensionEstimationServiceTest {
     @Test
     fun `cap at 30 service years yields factor 1, estimate equals 66 percent of salary`() {
         val asOf = LocalDate.of(2025, 1, 1)      // > 30 hele år fra 1970-01-01
-        val e = emp(
+        val e = testMember(
             annualSalaryNOK = 900_000,
             positionPercent = 100,
             employmentStart = LocalDate.of(1970, 1, 1)
