@@ -1,0 +1,7 @@
+[
+  { "id": "1001", "name": "Kari Nordmann", "birthYear": 1985, "annualSalaryNOK": 720000, "positionPercent": 100, "employmentStart": "2012-08-01" },
+  { "id": "1002", "name": "Ola Hansen", "birthYear": 1978, "annualSalaryNOK": 650000, "positionPercent": 80, "employmentStart": "2010-02-15" },
+  { "id": "1003", "name": "Aisha Ali", "birthYear": 1990, "annualSalaryNOK": 810000, "positionPercent": 100, "employmentStart": "2016-01-10" },
+  { "id": "1004", "name": "Jonas Berg", "birthYear": 1995, "annualSalaryNOK": 560000, "positionPercent": 60, "employmentStart": "2019-06-01" },
+  { "id": "1005", "name": "Linn Nilsen", "birthYear": 1982, "annualSalaryNOK": 900000, "positionPercent": 100, "employmentStart": "2008-09-01" }
+]

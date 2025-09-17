@@ -1,0 +1,15 @@
+### List alle
+GET http://localhost:8080/api/v1/pensjon/brukere
+Accept: application/json
+
+### Søk på navn
+GET http://localhost:8080/api/v1/pensjon/brukere?name=Kari
+Accept: application/json
+
+### Hent per id
+GET http://localhost:8080/api/v1/pensjon/brukere/1001
+Accept: application/json
+
+### Hent estimat for id
+GET http://localhost:8080/api/v1/pensjon/brukere/estimat/1001
+Accept: application/json
