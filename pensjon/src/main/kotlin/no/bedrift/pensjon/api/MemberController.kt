@@ -22,8 +22,8 @@ class EmployeeController(
     fun estimateAnnual(
         @PathVariable id: String
     ): ResponseEntity<EstimatedPensionResponse> {
-        val emp = employeeService.byId(id) ?: return ResponseEntity.notFound().build()
-        val resp = pensionEstimationService.estimate(emp, LocalDate.now())
-        return ResponseEntity.ok(resp)
+        val employee = employeeService.byId(id) ?: return ResponseEntity.notFound().build()
+        val response = pensionEstimationService.estimate(employee, LocalDate.now())
+        return ResponseEntity.ok(response)
     }
 }

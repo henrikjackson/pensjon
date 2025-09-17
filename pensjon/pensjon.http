@@ -1,15 +1,17 @@
-### List alle
+### Hent estimat for id (For innlogget bruker)
+GET http://localhost:8080/api/v1/pensjon/brukere/estimat/1001
+Accept: application/json
+
+### List alle brukere (Admin-panel)
 GET http://localhost:8080/api/v1/pensjon/brukere
 Accept: application/json
 
-### Søk på navn
+### Søk på navn (Admin-panel)
 GET http://localhost:8080/api/v1/pensjon/brukere?name=Kari
 Accept: application/json
 
-### Hent per id
+### Hent bruker med id (Admin-panel)
 GET http://localhost:8080/api/v1/pensjon/brukere/1001
 Accept: application/json
 
-### Hent estimat for id
-GET http://localhost:8080/api/v1/pensjon/brukere/estimat/1001
-Accept: application/json
+
