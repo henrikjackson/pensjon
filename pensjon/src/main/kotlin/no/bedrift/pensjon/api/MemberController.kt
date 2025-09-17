@@ -18,7 +18,7 @@ class EmployeeController(
     fun get(@PathVariable id: String): ResponseEntity<Member> =
         employeeService.byId(id)?.let { ResponseEntity.ok(it) } ?: ResponseEntity.notFound().build()
 
-    @GetMapping("/estimat/{id}")
+    @GetMapping("/{id}/estimat")
     fun estimateAnnual(
         @PathVariable id: String
     ): ResponseEntity<EstimatedPensionResponse> {
