@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="no.bedrift.pensjon.service.PensionEstimationServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-17T18:03:37.539Z" hostname="DESKTOP-DANFF72" time="0.063">
+<testsuite name="no.bedrift.pensjon.service.PensionEstimationServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-17T20:38:51.688Z" hostname="DESKTOP-DANFF72" time="0.055">
   <properties/>
-  <testcase name="cap at 30 service years yields factor 1, estimate equals 66 percent of salary()" classname="no.bedrift.pensjon.service.PensionEstimationServiceTest" time="0.063"/>
+  <testcase name="part-time 60 percent over 5 years yields fractional serviceYears and estimate()" classname="no.bedrift.pensjon.service.PensionEstimationServiceTest" time="0.051"/>
+  <testcase name="cap at 30 service years yields factor 1, estimate equals 66 percent of salary()" classname="no.bedrift.pensjon.service.PensionEstimationServiceTest" time="0.001"/>
+  <testcase name="full-time 10 whole years gives factor 10_30 and correct estimate()" classname="no.bedrift.pensjon.service.PensionEstimationServiceTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
